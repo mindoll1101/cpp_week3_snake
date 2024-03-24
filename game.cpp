@@ -1,5 +1,4 @@
 #include "console.h"
-#include <iostream>
 
 #define BOARD_SIZE 10
 #define MOVE_DELAY 15

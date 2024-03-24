@@ -1,6 +1,6 @@
 #include "console.h"
 
-#define BOARD_SIZE 10
+#define BOARD_SIZE 20
 #define MOVE_DELAY 15
 #define WALL_VERTICAL_STRING "┃"
 #define WALL_HORIZONTAL_STRING "━"
@@ -193,7 +193,7 @@ void gameOver(){
       }
       else{
         console::draw(BOARD_SIZE/2 - 4, BOARD_SIZE/2 - 1, "YOU LOSE!");
-        console::draw(BOARD_SIZE/2 - 8, BOARD_SIZE/2, "Try again? (Enter)");
+        console::draw(BOARD_SIZE/2 - 9, BOARD_SIZE/2, "Try again? (Enter)");
       }
       if(console::key(console::K_ENTER)){
         x = BOARD_SIZE/2;    //변수 초기화

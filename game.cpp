@@ -39,7 +39,7 @@ int score = 0;
 
 //key입력 저장
 bool key_left = false;                             
-bool key_right = false;
+bool key_right = true;
 bool key_up = false;
 bool key_down = false;
 bool key_esc = false;
@@ -191,7 +191,7 @@ void gameOver(){
     snake_arr[0][1] = y;
     applePos();
     key_left = false;
-    key_right = false;
+    key_right = true;
     key_up = false;
     key_down = false;
 
